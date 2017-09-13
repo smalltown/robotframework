@@ -1,0 +1,3 @@
+robotframework
+robotframework-xvfb
+robotframework-selenium2library
