@@ -8,4 +8,4 @@ COPY requirements.txt /root/requirements.txt
 
 RUN pip install --pre -r /root/requirements.txt
 
-CMD (Xvfb :10 -ac & export DISPLAY=:10; robot -d /root/test/output -v PHASE:$PHASE -v PROJECT:$PROJECT -v RUNTIME:container /root/test/tests)
+CMD (Xvfb :10 -ac & export DISPLAY=:10; robot -d /root/test/output -v PHASE:$PHASE -v PROJECT:$PROJECT -v VERSION:$VERSION -v RUNTIME:container /root/test/tests)
